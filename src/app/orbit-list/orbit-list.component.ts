@@ -11,6 +11,8 @@ export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
   
+  isSpaceDebris: boolean = true;
+
   constructor() { }
 
   ngOnInit() {

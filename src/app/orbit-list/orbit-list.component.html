@@ -10,18 +10,23 @@
        <td>
             {{satellite.name}}
        </td>
-       <td>
+
+       <td [class.warning] = "satellite.isSpaceDebris()">
             {{satellite.type}}
        </td>
+
        <td>
-        {{satellite.launchDate}}
+            {{satellite.operational}}
         </td>
+
         <td>
             {{satellite.orbitType}}
        </td>
+
        <td>
-        {{satellite.operational}}
+        {{satellite.launchDate}}
         </td>
+
     </tr>
     
    
